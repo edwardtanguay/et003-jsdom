@@ -1,0 +1,4 @@
+- x create a HTML page and run in live server
+- make a git repository and push
+
+
