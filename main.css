@@ -4,3 +4,7 @@ body {
 	font-family: sans-serif;
 	padding: 0 1rem;
 }
+
+.row {
+	margin-bottom: 1rem;
+}

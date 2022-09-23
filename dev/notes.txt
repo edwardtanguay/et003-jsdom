@@ -7,9 +7,12 @@
 - x create event handler in javascript
 - x use innerHTML
 - x attach click even in onclick 
-- .. implement onkeydown: let user enter text, this text will be used to change message
+- x implement onkeydown: let user enter text, this text will be used to change message
 
-- change the app from a test app to a Flashcard app
+- .. rows below each otehr
+
+
+- .. change the app from a test app to a Flashcard app
 - publish at Netlify
 - test on smartphone
 
