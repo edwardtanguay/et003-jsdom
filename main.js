@@ -8,6 +8,27 @@ const changeText2ButtonElem = document.querySelector('.changeText2Button');
 const toggleAnswerButtonElem = document.querySelector('.toggleAnswerButton');
 const answerElem = document.querySelector('.answer');
 
+const scoresContentElem = document.querySelector('.scoresContent');
+
+const scoreItems = [
+	{
+		user: "EJT",
+		score: "01842"
+	},
+	{
+		user: "PPB",
+		score: "01812"
+	},
+	{
+		user: "EJT",
+		score: "01482"
+	},
+	{
+		user: "EJT",
+		score: "01289"
+	}
+];
+
 // FLASHCARDS
 
 toggleAnswerButtonElem.addEventListener('click', () => {
@@ -48,3 +69,16 @@ userText2Elem.addEventListener('keypress', (e) => {
 		changeTheText2();
 	}
 });
+
+// SCORES
+
+scoresContentElem.innerHTML = scoreItems.map(score => {
+	return `
+	<table className="score">
+		<tr>
+			<td className="user">${score.user}</td>	
+			<td className="user">${score.score}</td>	
+		</tr>
+	</table>
+	`;
+}).join('');
