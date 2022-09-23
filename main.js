@@ -1,19 +1,21 @@
 const messageElem = document.querySelector('.message');
-const userTextElem = document.querySelector('.userText');
-const changeTextButtonElem = document.querySelector('.changeTextButton');
+const userText1Elem = document.querySelector('.userText1');
+const userText2Elem = document.querySelector('.userText2');
+const changeText1ButtonElem = document.querySelector('.changeText1Button');
+const changeText2ButtonElem = document.querySelector('.changeText2Button');
 
-userTextElem.focus();
+userText1Elem.focus();
 
 const changeTheText = () => {
-	messageElem.innerText = userTextElem.value;
-	userTextElem.value = '';
-	userTextElem.focus();
+	messageElem.innerText = userText1Elem.value;
+	userText1Elem.value = '';
+	userText1Elem.focus();
 };
 
 messageElem.innerText = 'initial text';
-changeTextButtonElem.addEventListener('click', changeTheText);
+changeText1ButtonElem.addEventListener('click', changeTheText);
 
-userTextElem.addEventListener('keyup', (e) => {
+userText1Elem.addEventListener('keyup', (e) => {
 	if (e.keyCode === 13) {
 		changeTheText();
 	}
