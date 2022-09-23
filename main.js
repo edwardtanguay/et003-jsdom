@@ -10,24 +10,41 @@ const answerElem = document.querySelector('.answer');
 
 const scoresContentElem = document.querySelector('.scoresContent');
 
-const scoreItems = [
-	{
-		user: "EJT",
-		score: "01842"
-	},
-	{
-		user: "PPB",
-		score: "01812"
-	},
-	{
-		user: "EJT",
-		score: "01482"
-	},
-	{
-		user: "EJT",
-		score: "01289"
-	}
-];
+// const scoreItems = [
+// 	{
+// 		user: "EJT",
+// 		score: "01842"
+// 	},
+// 	{
+// 		user: "PPB",
+// 		score: "01812"
+// 	},
+// 	{
+// 		user: "EJT",
+// 		score: "01482"
+// 	},
+// 	{
+// 		user: "EJT",
+// 		score: "01289"
+// 	}
+// ];
+
+(async () => {
+	const response = await fetch('https://testapi.tkserv.eu/scores');
+	const _scores = await response.json();
+	scoresContentElem.innerHTML = _scores
+		.map((score) => {
+			return `
+	<table className="score">
+		<tr>
+			<td className="user">${score.user}</td>	
+			<td className="user">${score.score}</td>	
+		</tr>
+	</table>
+	`;
+		})
+		.join('');
+})();
 
 // FLASHCARDS
 
@@ -54,7 +71,7 @@ userText1Elem.addEventListener('keypress', (e) => {
 	}
 });
 
-// TWO 
+// TWO
 const changeTheText2 = (e) => {
 	message2Elem.innerText = userText2Elem.value;
 	userText2Elem.value = '';
@@ -71,14 +88,3 @@ userText2Elem.addEventListener('keypress', (e) => {
 });
 
 // SCORES
-
-scoresContentElem.innerHTML = scoreItems.map(score => {
-	return `
-	<table className="score">
-		<tr>
-			<td className="user">${score.user}</td>	
-			<td className="user">${score.score}</td>	
-		</tr>
-	</table>
-	`;
-}).join('');
