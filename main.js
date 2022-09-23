@@ -4,6 +4,15 @@ const userText1Elem = document.querySelector('.userText1');
 const userText2Elem = document.querySelector('.userText2');
 const changeText1ButtonElem = document.querySelector('.changeText1Button');
 const changeText2ButtonElem = document.querySelector('.changeText2Button');
+const toggleAnswerButtonElem = document.querySelector('.toggleAnswerButton');
+
+// FLASHCARDS
+
+toggleAnswerButtonElem.addEventListener('click', () => {
+	console.log('toggle');
+});
+
+// DOM JS TEXT
 
 userText1Elem.focus();
 

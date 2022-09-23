@@ -8,11 +8,9 @@
 - x use innerHTML
 - x attach click even in onclick 
 - x implement onkeydown: let user enter text, this text will be used to change message
+- x rows below each otehr
 
-- .. rows below each otehr
-
-
-- .. change the app from a test app to a Flashcard app
+- .. add Flashcard section
 - publish at Netlify
 - test on smartphone
 
