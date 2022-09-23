@@ -5,10 +5,14 @@
 - x change text on page with javascript
 - x create a button that changes text on the screen
 - x create event handler in javascript
-- .. use innerHTML
+- x use innerHTML
 
-- attach click even in onclick 
+- .. attach click even in onclick 
 - implement onkeydown
+
+- change the app from a test app to a Flashcard app
+- publish at Netlify
+- test on smartphone
 
 
 
