@@ -1,3 +1,7 @@
 const messageElem = document.querySelector('.message');
+const changeTextButtonElem = document.querySelector('.changeTextButton');
 
-messageElem.innerText = 'THIS IS A NEW TEXT';
+messageElem.innerText = 'initial text';
+changeTextButtonElem.addEventListener('click', () => {
+	messageElem.innerText = 'the button was clicked';
+});

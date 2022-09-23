@@ -2,7 +2,13 @@
 - x make a git repository and push
 - x css file
 - x create javascript file with console.log test
-- .. change text on page with javascript
+- x change text on page with javascript
+- x create a button that changes text on the screen
+- x create event handler in javascript
+- .. use innerHTML
+
+- attach click even in onclick 
+- implement onkeydown
 
 
 
