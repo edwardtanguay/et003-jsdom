@@ -16,22 +16,23 @@ const changeTheText1 = () => {
 
 changeText1ButtonElem.addEventListener('click', changeTheText1);
 
-userText1Elem.addEventListener('keyup', (e) => {
+userText1Elem.addEventListener('keypress', (e) => {
 	if (e.keyCode === 13) {
 		changeTheText1();
 	}
 });
 
 // TWO 
-const changeTheText2 = () => {
+const changeTheText2 = (e) => {
 	message2Elem.innerText = userText2Elem.value;
 	userText2Elem.value = '';
 	userText1Elem.focus();
+	e.preventDefault();
 };
 
 changeText2ButtonElem.addEventListener('click', changeTheText2);
 
-userText2Elem.addEventListener('keyup', (e) => {
+userText2Elem.addEventListener('keypress', (e) => {
 	if (e.keyCode === 13) {
 		changeTheText2();
 	}
