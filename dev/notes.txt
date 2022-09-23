@@ -1,5 +1,9 @@
 - x create a HTML page and run in live server
 - x make a git repository and push
 - x css file
+- x create javascript file with console.log test
+- .. change text on page with javascript
+
+
 
 
